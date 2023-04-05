@@ -1,19 +1,16 @@
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import Tours from '../tours/Tours';
+import './Home.css';
+
 function Home(params) {
     return (
         <>
-            <Header />
-            {
-                params.memesData.map(element => {
-                    return (
-                        <Tours tours_name={element.name} image_url={element.image} />
-
-                    )
-                })
-                }
-            <Footer />
+            <div className='header'><Header /></div>
+           
+           <div  className='tours'><Tours data={params.data}  /></div>
+            
+           <div className='footer'> <Footer /></div>
         </>
     )
 }

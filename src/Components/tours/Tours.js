@@ -1,11 +1,20 @@
-import './Tours.css';
 
+import Tour from './tour/Tour';
 function Tours(params) {
+ 
     return (
-      <div>
-        <h2>{params.tours_name}</h2>
-        <img src={params.image_url} className="tours-image" alt={params.tours_name} />
-      </div>
+     
+     <>
+     {
+        params.data.map(element => {
+          
+            return (
+                <Tour  tour={element}  key={element.id}  />
+
+            )
+        })
+        }
+        </>
     );
   }
   

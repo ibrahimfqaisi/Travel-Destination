@@ -1,0 +1,7 @@
+.main{
+    display: flex;
+    background-color: rgb(208, 199, 234);
+   
+    flex-direction:column;
+    height: 100%;
+}

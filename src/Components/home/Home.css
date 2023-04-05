@@ -1,6 +1,8 @@
-.home_page{
-    
-        background-color: #282c34;
+
+.tours{
         
-      
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+          
 }
